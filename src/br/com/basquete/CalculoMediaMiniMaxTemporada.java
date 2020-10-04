@@ -12,9 +12,9 @@ public class CalculoMediaMiniMaxTemporada {
 		public CalculoMediaMiniMaxTemporada(int minimo, int maximo) {
 		setMinimo(minimo);
 		setMaximo(maximo);
-	}
 		
-		
+		}
+
 		public int getMinimo() {
 			return minimo;
 		}
@@ -44,10 +44,8 @@ public class CalculoMediaMiniMaxTemporada {
 		public void adicionarCalculoMiniTemporada(CalculoMediaMiniMaxTemporada e) {
 			this.listaCalculoMiniTemporada.add(e);
 		}
-		public ArrayList<CalculoMediaMiniMaxTemporada> getListarMiniTemporada() {
+		public ArrayList<CalculoMediaMiniMaxTemporada> getListaCalculoMiniTemporada() {
 			return this.listaCalculoMiniTemporada;
-		}
-
-	
+		}			
 
 }

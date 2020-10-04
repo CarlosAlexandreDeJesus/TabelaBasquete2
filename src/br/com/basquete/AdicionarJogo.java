@@ -23,9 +23,9 @@ public class AdicionarJogo extends Basquete{
 		return null;
 	}
 	
-	//im
-/*@Override
+
+@Override
 	public String toString() {
-		return String.format(super.toString(), args);
-	}*/
+		return String.format(super.toString());
+	}
 }

@@ -2,10 +2,12 @@ package br.com.basquete;
 
 import java.util.ArrayList;
 
-//listar jogo é folha de pagamento
+
 public class ListarJogos {
 	
 	ArrayList<Basquete> listaJogos;
+	
+	
 	
 	public ListarJogos() {
 		this.listaJogos = new ArrayList<Basquete>();
@@ -18,4 +20,6 @@ public class ListarJogos {
 	public ArrayList<Basquete> getListarJogos() {
 		return this.listaJogos;
 	}
+	
+	
 }

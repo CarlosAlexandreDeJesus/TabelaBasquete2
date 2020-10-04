@@ -14,7 +14,7 @@ public  abstract class Basquete {
 		setMiniTemporada(miniTemporada);
 		setMaxTemporada(maxTemporada);
 		setQuebraMini(quebraMini);
-		setQuebraMini(quebraMax);
+		setQuebraMax(quebraMax);
 	}
 
 	public int getJogo() {
@@ -54,7 +54,7 @@ public  abstract class Basquete {
 	}
 
 	public void setQuebraMini(int quebraMini) {
-		quebraMini = quebraMini;
+		this.quebraMini = quebraMini;
 	}
 
 	public int getQuebraMax() {
@@ -62,23 +62,16 @@ public  abstract class Basquete {
 	}
 
 	public void setQuebraMax(int quebraMax) {
-		quebraMax = quebraMax;
+		this.quebraMax = quebraMax;
+	}
+	public  void imprimirTabelaNumeros() {
+		System.out.printf("%8d%8d%15d%20d%20d%17d",jogo,placar, miniTemporada,maxTemporada,quebraMini,quebraMax);
 	}
 	
-	
-	@Override
-	public String toString() {
-		return String.format("%5d | %5d | %5d | %5d | %5d", getJogo(), getPlacar(), getMiniTemporada(),getQuebraMini(),getQuebraMax());
-	}
-	
-	public abstract String imprimirTabela();//implementar na classe ConsultaDadosDoJogo 
-	
-	/*public void imprimirTabela() {
+	public void imprimirTabelaNomes() {
 		
-		System.out.printf("        "+"     Jogo"+ "   |     "+" "+"Placar" + " |   Mini temporada"+ " | Recorde Mínimo"+ " | Recorde Máximo");
-	
-		
+		System.out.printf("%10s%10s%10s%10s%10s%10s","Jogo"," | Placar"," | Mínimo Temporada"," | Máximo Temporada"," | Recorde Mínimo"," | Recorde Máximo |");	
 		System.out.println();
-	}*/
+	}
 
 }

@@ -1,12 +1,23 @@
 package br.com.basquete;
 
+import java.util.ArrayList;
+
 public class CalculoDoRecordeMiniMax {
 	
-	private int recordeMini, recordeMax,mediaRecordes;
+	private int recordeMini, recordeMax,opcao,mediaRecordes;
+	ArrayList<CalculoDoRecordeMiniMax> listaRecorde;
 	
 	public CalculoDoRecordeMiniMax(int recordeMini, int recordeMax) {
 		setRecordeMini(recordeMini);
 		setRecordeMax(recordeMax);
+	}
+
+	public int getOpcao() {
+		return opcao;
+	}
+
+	public void setOpcao(int opcao) {
+		this.opcao = opcao;
 	}
 
 	public int getRecordeMini() {
@@ -26,7 +37,7 @@ public class CalculoDoRecordeMiniMax {
 	}
 
 	public int quatidadeRecorde() {
-		//Fazer a logica para dar 0 ou 1
+		
 		if(getRecordeMini() == 12 && getRecordeMax() == 12) {
 		    mediaRecordes = 0;
 		}else if (getRecordeMini()== 12 && getRecordeMax() >= 24) {
@@ -37,4 +48,15 @@ public class CalculoDoRecordeMiniMax {
 		return mediaRecordes;
 		
 	}
+	public  CalculoDoRecordeMiniMax() {
+		this.listaRecorde = new ArrayList<CalculoDoRecordeMiniMax>();
+		}
+
+		public void adicionarRecorde(CalculoDoRecordeMiniMax e) {
+			this.listaRecorde.add(e);
+		}
+		public ArrayList<CalculoDoRecordeMiniMax> getListaRecorde() {
+			return this.listaRecorde;
+		}
+	
 }
