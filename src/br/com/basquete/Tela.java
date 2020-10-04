@@ -28,8 +28,14 @@ public class Tela {
 			System.out.println();
 			System.out.println("Digite o jogo");
 			int jogo = teclado.nextInt();
+			int placar;
+			do {
 			System.out.println("Digite o placar");
-			int placar = teclado.nextInt();
+			placar = teclado.nextInt();
+			
+			if(placar > 1000 ) 
+				System.out.println("O placar deve ser menor que 1000");
+			}while(placar > 1000);
 			System.out.println("Digite o mínimo da temporada");
 			int miniTemporada = teclado.nextInt();
 			System.out.println("Digite o máximo da temporada");
@@ -68,7 +74,7 @@ public class Tela {
 		}
 		public void imprimirJogo(Basquete jogoCorrente,int flagParaImprimirStrings) {
 			
-			if(flagParaImprimirStrings == 0) {
+			if(flagParaImprimirStrings == 0){
 				jogoCorrente.imprimirTabelaNomes();
 				jogoCorrente.imprimirTabelaNumeros();
 			}else {

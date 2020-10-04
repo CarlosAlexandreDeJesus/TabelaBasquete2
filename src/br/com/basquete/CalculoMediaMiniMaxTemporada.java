@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class CalculoMediaMiniMaxTemporada {
 	
 	
-	ArrayList<CalculoMediaMiniMaxTemporada> listaCalculoMiniTemporada;
+	    ArrayList<CalculoMediaMiniMaxTemporada> listaCalculoMiniTemporada;
 
 	    private int minimo,maximo;
 		
